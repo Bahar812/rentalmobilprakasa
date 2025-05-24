@@ -12,7 +12,7 @@ interface WhatsAppButtonProps {
 const WhatsAppButton: React.FC<WhatsAppButtonProps> = ({ 
   phone, 
   message = defaultMessage,
-  label = 'Tanya-tanya dulu via WhatsApp'
+  label = 'Chat'
 }) => {
   const whatsappLink = generateWhatsAppLink(phone, message);
 
