@@ -28,11 +28,11 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .btn-primary {
-  @apply bg-primary-600 text-white hover:bg-primary-700;
+  @apply bg-primary-700 text-white hover:bg-primary-800;
 }
 
 .btn-outline {
-  @apply border border-primary-600 text-primary-600 hover:bg-primary-50;
+  @apply border border-primary-700 text-primary-700 hover:bg-primary-50;
 }
 
 .card {
@@ -41,4 +41,13 @@ h1, h2, h3, h4, h5, h6 {
 
 .car-grid {
   @apply grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6;
+}
+
+@keyframes marquee {
+  from { transform: translateX(0); }
+  to { transform: translateX(-100%); }
+}
+
+.animate-marquee {
+  animation: marquee 30s linear infinite;
 }

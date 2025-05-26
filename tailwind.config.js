@@ -5,16 +5,16 @@ export default {
     extend: {
       colors: {
         primary: {
-          50: '#FFF6E5',
-          100: '#FFEDCC',
-          200: '#FFD699',
-          300: '#FFBF66',
-          400: '#FFA833',
-          500: '#FF9100',
-          600: '#FF6B00', // Primary orange
-          700: '#CC5600',
-          800: '#994000',
-          900: '#662B00',
+          50: '#f6f6f7',
+          100: '#e7e8ea',
+          200: '#d5d7db',
+          300: '#b3b7bf',
+          400: '#8b919d',
+          500: '#6b7280',
+          600: '#515761',
+          700: '#434750', // Primary dark accent
+          800: '#383c43',
+          900: '#21232a',
         },
         secondary: {
           50: '#F9FAFB',
