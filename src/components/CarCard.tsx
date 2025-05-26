@@ -22,13 +22,13 @@ const CarCard: React.FC<CarCardProps> = ({ car }) => {
           alt={name} 
           className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
         />
-        <div className="absolute top-0 right-0 bg-primary-600 text-white px-3 py-1 text-sm font-medium">
+        <div className="absolute top-0 right-0 bg-primary-700 text-white px-3 py-1 text-sm font-medium">
           24 JAM
         </div>
       </div>
       <div className="p-4">
         <h3 className="text-lg font-semibold text-secondary-900">
-          {name} {year && <span className="text-primary-600">{year}</span>}
+          {name} {year && <span className="text-primary-700">{year}</span>}
         </h3>
       </div>
     </motion.div>

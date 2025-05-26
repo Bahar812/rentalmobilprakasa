@@ -35,7 +35,7 @@ const Header: React.FC = () => {
           smooth={true}
           offset={-100}
           duration={500}
-          className="cursor-pointer font-medium transition-colors hover:text-primary-600 text-white"
+          className="cursor-pointer font-medium transition-colors hover:text-primary-400 text-white"
           onClick={() => setIsOpen(false)}
         >
           {item.label}
@@ -46,7 +46,7 @@ const Header: React.FC = () => {
     return (
       <RouterLink
         to={item.path}
-        className="font-medium transition-colors hover:text-primary-600 text-white"
+        className="font-medium transition-colors hover:text-primary-400 text-white"
         onClick={() => setIsOpen(false)}
       >
         {item.label}
@@ -65,7 +65,7 @@ const Header: React.FC = () => {
     >
       <div className="container flex justify-between items-center">
         <RouterLink to="/" className="flex items-center">
-          <Car className="h-8 w-8 text-primary-600 mr-2" />
+          <Car className="h-8 w-8 text-primary-400 mr-2" />
           <h1 className="text-xl md:text-2xl font-bold text-white">
             Prakasa Rent Car
           </h1>
