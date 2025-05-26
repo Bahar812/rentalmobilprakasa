@@ -8,7 +8,6 @@ const Hero: React.FC = () => {
       id="beranda" 
       className="relative min-h-screen flex items-center justify-center bg-gradient-to-r from-secondary-900 to-secondary-800 overflow-hidden"
     >
-      {/* Background Image with Overlay */}
       <div className="absolute inset-0 z-0">
         <img 
           src="https://images.pexels.com/photos/244206/pexels-photo-244206.jpeg?auto=compress&cs=tinysrgb&w=1200" 
@@ -25,7 +24,7 @@ const Hero: React.FC = () => {
             transition={{ duration: 0.8 }}
           >
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight mb-6">
-              Rental Mobil <span className="text-primary-700">Premium</span> di Surabaya
+              Rental Mobil <span className="text-primary-400">Premium</span> di Surabaya
             </h1>
             <p className="text-lg text-secondary-200 mb-8">
               Berbagai pilihan mobil berkualitas dengan harga terjangkau untuk kebutuhan transportasi Anda di Surabaya dan sekitarnya.
@@ -81,23 +80,23 @@ const Hero: React.FC = () => {
 
       {/* Brand Marquee */}
       <div className="absolute bottom-0 left-0 right-0 bg-black/30 backdrop-blur-sm py-8 overflow-hidden">
-        <div className="flex justify-center items-center gap-12 animate-marquee">
-          <motion.div 
-            className="flex gap-12 items-center"
-            animate={{ x: [0, -1920] }}
-            transition={{ 
-              duration: 30,
-              repeat: Infinity,
-              ease: "linear"
-            }}
-          >
-            <img src="https://www.car-logos.org/wp-content/uploads/2011/09/toyota.png" alt="Toyota" className="h-12 opacity-75 grayscale hover:grayscale-0 hover:opacity-100 transition-all" />
-            <img src="https://www.car-logos.org/wp-content/uploads/2011/09/honda.png" alt="Honda" className="h-12 opacity-75 grayscale hover:grayscale-0 hover:opacity-100 transition-all" />
-            <img src="https://www.car-logos.org/wp-content/uploads/2011/09/mitsubishi.png" alt="Mitsubishi" className="h-12 opacity-75 grayscale hover:grayscale-0 hover:opacity-100 transition-all" />
-            <img src="https://www.car-logos.org/wp-content/uploads/2011/09/nissan.png" alt="Nissan" className="h-12 opacity-75 grayscale hover:grayscale-0 hover:opacity-100 transition-all" />
-            <img src="https://www.car-logos.org/wp-content/uploads/2011/09/hyundai.png" alt="Hyundai" className="h-12 opacity-75 grayscale hover:grayscale-0 hover:opacity-100 transition-all" />
-            <img src="https://www.car-logos.org/wp-content/uploads/2011/09/suzuki.png" alt="Suzuki" className="h-12 opacity-75 grayscale hover:grayscale-0 hover:opacity-100 transition-all" />
-          </motion.div>
+        <div className="flex space-x-12 animate-marquee">
+          <div className="flex space-x-12 items-center">
+            <img src="/brands/toyota.png" alt="Toyota" className="h-12 opacity-75 grayscale hover:grayscale-0 hover:opacity-100 transition-all" />
+            <img src="/brands/honda.png" alt="Honda" className="h-12 opacity-75 grayscale hover:grayscale-0 hover:opacity-100 transition-all" />
+            <img src="/brands/mitsubishi.png" alt="Mitsubishi" className="h-12 opacity-75 grayscale hover:grayscale-0 hover:opacity-100 transition-all" />
+            <img src="/brands/nissan.png" alt="Nissan" className="h-12 opacity-75 grayscale hover:grayscale-0 hover:opacity-100 transition-all" />
+            <img src="/brands/hyundai.png" alt="Hyundai" className="h-12 opacity-75 grayscale hover:grayscale-0 hover:opacity-100 transition-all" />
+            <img src="/brands/suzuki.png" alt="Suzuki" className="h-12 opacity-75 grayscale hover:grayscale-0 hover:opacity-100 transition-all" />
+          </div>
+          <div className="flex space-x-12 items-center">
+            <img src="/brands/toyota.png" alt="Toyota" className="h-12 opacity-75 grayscale hover:grayscale-0 hover:opacity-100 transition-all" />
+            <img src="/brands/honda.png" alt="Honda" className="h-12 opacity-75 grayscale hover:grayscale-0 hover:opacity-100 transition-all" />
+            <img src="/brands/mitsubishi.png" alt="Mitsubishi" className="h-12 opacity-75 grayscale hover:grayscale-0 hover:opacity-100 transition-all" />
+            <img src="/brands/nissan.png" alt="Nissan" className="h-12 opacity-75 grayscale hover:grayscale-0 hover:opacity-100 transition-all" />
+            <img src="/brands/hyundai.png" alt="Hyundai" className="h-12 opacity-75 grayscale hover:grayscale-0 hover:opacity-100 transition-all" />
+            <img src="/brands/suzuki.png" alt="Suzuki" className="h-12 opacity-75 grayscale hover:grayscale-0 hover:opacity-100 transition-all" />
+          </div>
         </div>
       </div>
     </section>
